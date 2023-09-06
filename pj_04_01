@@ -1,0 +1,14 @@
+Hours = input('Enter Hours: ')
+Rate = input ('Enter Rate: ')
+h = float(Hours)
+r = float(Rate)
+def computepay(h,r):
+    regp = h * r
+    otp = (h - 40.0) * (r * 0.5)
+    return(regp + otp)
+if h <= 40:
+    print('Pay', h*r)
+elif h > 40:
+    print('Pay', computepay(h,r))
+else:
+    print('error, number of hours cannot be negative')
